@@ -5,7 +5,7 @@ For json processing [Gson](https://github.com/google/gson) library is used.
 
 ### Usage
 
-1. Parsing csv
+1. Parsing csv. Csv file should follow RFC 4180 rules.
 ```java
 // (String) source - string with csv file content
 // (boolean) hasHeader
