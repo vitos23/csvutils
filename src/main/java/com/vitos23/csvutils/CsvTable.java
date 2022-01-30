@@ -17,7 +17,7 @@ public class CsvTable {
      */
     public CsvTable(String[] header, String[][] table) {
         this.header = header;
-        this.table = table;
+        this.table = table == null ? new String[][]{} : table;
     }
 
     /**
@@ -25,8 +25,7 @@ public class CsvTable {
      * @param table is the content of the csv table
      */
     public CsvTable(String[][] table) {
-        this.header = null;
-        this.table = table;
+        this(null, table);
     }
 
     /**
